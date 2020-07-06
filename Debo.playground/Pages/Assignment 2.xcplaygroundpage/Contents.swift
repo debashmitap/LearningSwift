@@ -51,7 +51,7 @@ struct Calculator {
  */
 
 Calculator().add(a: 5, b: 6)
-Calculator().sub(a: 5, b: 6)
+Calculator().sub(a: 5, b: 7)
 Calculator().mul(a: 5, b: 6)
 Calculator().div(a: 5, b: 6)
 Calculator().pow(a: 2, b: 3)
