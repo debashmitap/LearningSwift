@@ -13,11 +13,11 @@
 /// A simple calculator.
 ///
 /// This calculator should include the following functions:
-/// - `add`: receives two Ints and returns their sum.
-/// - `sub`: receives two Ints and returns their difference.
-/// - `mul`: receives two Ints and returns their product.
-/// - `div`: receives two Ints and returns their rounded down quotient.
-/// - `pow`: receives two Ints and returns the first to the power of the second.
+/// - `add`: receives two `Int`s and returns their sum.
+/// - `sub`: receives two `Int`s and returns their difference.
+/// - `mul`: receives two `Int`s and returns their product.
+/// - `div`: receives two `Int`s and returns their rounded down quotient.
+/// - `pow`: receives two `Int`s and returns the first to the power of the second.
 struct Calculator {
     func add (a:Int, b:Int)->Int
     {
