@@ -29,7 +29,9 @@ potentiallyNilValue = 10
  Try fixing the error in the line below:
  */
 
-let anotherVariable: Int = nil
+
+var anotherVariable: Int? = nil
+
 
 /*
  You can use non-optional types when you are certain
@@ -99,12 +101,20 @@ optionalString?.count
  Use two optional bindings to avoid the compilation error in the call to the add function.
  */
 
-func add(a: Int, b: Int) -> Int {
+func add(a: Int, b: Int) -> Int
+{
     a+b
 }
 
-add(a: validConverted, b: invalidConverted)
-
+if let value1 = validConverted
+{
+    if let value2 = invalidConverted
+    {
+        
+        add(a: value1, b: value2)
+    }
+    
+}
 /*
  If at a certain point of the code you are certain
     that an optional has a value, you can force
@@ -119,7 +129,7 @@ validConverted!
 
 // This will cause your program to crash!
 // Delete or comment out this line.
-invalidConverted!
+//invalidConverted!
 
 /*
  A safer alternative is to provide a default value
@@ -139,8 +149,19 @@ add(a: validConverted ?? 0, b: invalidConverted ?? 0)
  The return value should be nil if the divisor is 0.
  */
 
-func div(a: Double, b: Double) -> Double? {
+func div(a: Double, b: Double) -> Double?
+{
+    var div: Double?
+    if (b != 0)
+    {
+     div = a/b
+    }
+    else
+    {
+    div = nil
+    }
     
+    return(div)
 }
 
 div(a: 4, b: 2)
@@ -156,10 +177,25 @@ div(a: 3, b: 0)
  Tip: use the string.split(separator:) method to separate the String into an Array of Strings.
  */
 
-func arrayOfInts(string: String) -> [Int] {
+func arrayOfInts(string: String) -> [Int]
+{
+    let array = string.split(separator:" ")
+    var array2:[Int] = []
     
+    for i in array
+    {
+        let convertedString = Int(i)
+        if let value = convertedString
+        {
+            array2.append(value)
+        }
+        
+    }
+    
+    return array2
 }
 
 arrayOfInts(string: "A 3 B 4 3 2 C 5 D 2 E F G 6")
 
 //: [Next](@next)
+
