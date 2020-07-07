@@ -3,7 +3,7 @@
 import Foundation
 
 /*
- Assignment 4: Introduction to Optionals
+ Assignment 3: Introduction to Optionals
  
  In Swift, not every variable can hold a nil value.
  In fact, the standard types in Swift can never be nil.
