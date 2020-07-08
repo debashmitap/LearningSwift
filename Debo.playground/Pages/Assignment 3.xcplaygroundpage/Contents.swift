@@ -45,10 +45,10 @@ var anotherVariable: Int? = nil
  */
 
 let validString = "123"
-let validConverted = Int(validString)
+let validConverted:Int? = Int(validString)
 
 let invalidString = "abc"
-let invalidConverted = Int(invalidString)
+let invalidConverted:Int? = Int(invalidString)
 
 
 /*
