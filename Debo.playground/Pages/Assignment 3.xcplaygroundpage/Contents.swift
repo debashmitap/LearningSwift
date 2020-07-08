@@ -45,7 +45,7 @@ var anotherVariable: Int? = nil
  */
 
 let validString = "123"
-let validConverted:Int? = Int(validString)
+let validConverted:Int? = Int.init(validString)
 
 let invalidString = "abc"
 let invalidConverted:Int? = Int(invalidString)
