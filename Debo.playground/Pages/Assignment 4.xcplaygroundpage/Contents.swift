@@ -34,7 +34,11 @@ import Foundation
  🟦🟦🟦🟦🟦🟧🟧🟧🟧🟧🟩🟩🟩🟩🟩
  
  Each item in `bitMap` is a single bit;
+<<<<<<< Updated upstream
  the sizes of `keys` and `values` depends on the type we want.
+=======
+    the sizes of `keys` and `values` depend on the types we want.
+>>>>>>> Stashed changes
  In this case, the size of our dictionary is something like this:
  
  (sizeOf(Bool) + sizeOf(String) + sizeOf(Int)) * capacity
@@ -93,8 +97,8 @@ import Foundation
 struct MyDictionary {
     
     /// The number of slots allocated in memory for this dictionary.
-    private let size:Int
-    /// The map of valid values; if `bitMap[i]`, `values[i]` is a valid value.
+    private var size:Int
+    /// The map of valid values; if `bitMap[i]` is true, `values[i]` is a valid value.
     private var bitMap:[Bool]
     
     /// The number of valid values in the dictionary.
