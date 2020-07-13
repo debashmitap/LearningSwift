@@ -10,7 +10,6 @@
 		1F0DCCBA24BC5742005A12C0 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DCCB924BC5742005A12C0 /* main.swift */; };
 		1F0DCCC124BC574E005A12C0 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DCCC024BC574E005A12C0 /* Graph.swift */; };
 		1F0DCCED24BC5CC2005A12C0 /* GraphsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DCCEB24BC5CC2005A12C0 /* GraphsTests.swift */; };
-		1F0DCCEE24BC5CC2005A12C0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F0DCCEC24BC5CC2005A12C0 /* Info.plist */; };
 		1F36EBA724BC5D6100FD0216 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0DCCC024BC574E005A12C0 /* Graph.swift */; };
 /* End PBXBuildFile section */
 
@@ -168,7 +167,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F0DCCEE24BC5CC2005A12C0 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
